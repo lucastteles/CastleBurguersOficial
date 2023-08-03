@@ -17,7 +17,7 @@
 .background {
     position: relative;
     height: 100vh;
-    background-color:#000;
+    background-color: #000;
 }
 
     .background .carousel .slide {
@@ -33,10 +33,10 @@
             animation: slideContent .4s linear .4s backwards;
         }
 
-           .contentproje img {
-                height: 100vh;
-                width:35%;
-            }
+.contentproje img {
+    height: 100vh;
+    width: 35%;
+}
 
 @keyframes slideContent {
     0% {
@@ -64,14 +64,14 @@
     }
 
 
-    /*imagem-logo*/
+/*imagem-logo*/
 .banner {
     align-items: center;
     justify-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    z-index: 2; 
+    z-index: 2;
 }
 
 
@@ -146,12 +146,12 @@ button {
 }
 
 
-button:hover {
-    background-color: #000;
-    color: #CD7F32;
-    border: 2px solid #CD7F32;
-    cursor: pointer;
-}
+    button:hover {
+        background-color: #000;
+        color: #CD7F32;
+        border: 2px solid #CD7F32;
+        cursor: pointer;
+    }
 
 
 /*Combo*/
@@ -211,14 +211,13 @@ button:hover {
     color: #603A24;
     font-family: 'Gideon Roman', sans-serif;
     position: relative;
-   
 }
 
 
 .teste {
     display: flex;
     margin-top: -35px;
-    margin-left:150px;
+    margin-left: 150px;
 }
 
 .left-burguer {
@@ -227,7 +226,6 @@ button:hover {
     justify-content: left;
     flex-direction: column;
     position: relative;
-   
 }
 
 .burguer {
@@ -265,7 +263,6 @@ button:hover {
     font-size: 20px;
     letter-spacing: 0.1px;
     color: #fff;
-
 }
 
 span {
@@ -283,18 +280,18 @@ span {
 
 /*Delivery*/
 
-.delivery { 
+/*.delivery {
     background-color: #CD7F32;
     display: flex;
     height: 100vh;
-    opacity: 0; /* Inicialmente, o elemento estará invisível */
-}
+    opacity: 0;*/ /* Inicialmente, o elemento estará invisível */
+/*}
 
 .montagem {
-    opacity: 0; /* Inicialmente, o elemento estará invisível */
-}
+    opacity: 0;*/ /* Inicialmente, o elemento estará invisível */
+/*}
 
-.dede { 
+.dede {
     display: flex;
     text-align: left;
     justify-content: center;
@@ -302,8 +299,8 @@ span {
     margin: 300px;
 }
 
-.delivery-laranja { 
-    margin: -171px; 
+.delivery-laranja {
+    margin: -171px;
 }
 
 .delivery-titulo {
@@ -336,14 +333,72 @@ span {
     font-weight: 100;
 }
 
-.img-delivery { 
+.img-delivery {
     display: flex;
     margin-left: 50px;
-    width: 55vw;
+    width: 5vw;
     height: 100%
+}*/
+
+
+.delivery {
+    display: flex;
+    height: 100vh;
+    
 }
 
+.dede {
+    background-color: #CD7F32;
+    width: 50%;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+.delivery-laranja {
+    
+}
 
+.delivery-titulo {
+    font-size: 65px;
+    font-weight: bold;
+    color: #1C2120;
+    margin-bottom: 10px;
+    font-weight: 100;
+    margin-left: 55px;
+}
+
+.descricao {
+    color: #1C2120;
+    font-size: 25px;
+    font-weight: 100;
+    margin-left: 55px;
+}
+
+.cta-button {
+    width: 30%;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    background: #000;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: #fff;
+    margin-top: 15px;
+    font-weight: 100;
+    margin-left: 55px;
+}
+
+.img-delivery {
+    display: flex;
+    width: 140%;
+    height: 100vh
+}
 
 
 /***Cardápio-Burguer***/
@@ -355,15 +410,8 @@ span {
     justify-content: center;
 }
 
-.titulo-cardapio {
-    color: #CD7F32;
-    font-size: 30px;
-    margin: 0px;
-    letter-spacing: 1px;
-}
-
 .Imagem-cardapio {
-    margin-top: -720px;
+    margin-top: -850px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -372,97 +420,97 @@ span {
 
 .titulo-burguer {
     color: #fff;
-    margin-top: -550px;
+    margin-top: -720px;
     font-size: 30px;
     display: flex;
     margin-left: 50px;
     letter-spacing: 1px;
     font-weight: 100;
-    opacity: 0; /* Inicialmente, o elemento estará invisível */
+    opacity: 0;
+    position: absolute;
+    /* Inicialmente, o elemento estará invisível */
 }
 
-.cards-and-button {
-    margin-top: 180px;
-    margin-right: 90px;
-  
-}
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /*justify-content:space-between;*/
-    align-items: center;
-    margin-top: 300px;
+.cardapio-container {
+    display: flex; /* Cria um flex container para os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
+    justify-content: space-between; /* Distribui os cards ao longo do espaço disponível na linha */
+    margin-top: 320px;
 }
 
 .card-cardapio {
-    flex-basis: calc(50% - 100px);
-    margin-bottom: 40px;
+    flex-basis: calc(100% - 20px); /* Define a base flexível para ocupar metade do espaço disponível e deixa espaço entre os cards */
+    max-width: 450px; /* Define uma largura máxima para cada card */
+    /* Adiciona uma margem entre os cards */
+    display: flex; /* Cria um flex container para a imagem e o conteúdo de texto */
     background-color: #000;
     border-radius: 20px;
     padding: 20px;
     height: 210px;
-    /****/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 250%;
     box-shadow: 0px 1px 40px #000;
+    margin: 120px; /****************/
+    margin-bottom: 50px;
+    /*Alterar para 20px no responsivo*/
 }
 
 .img-card {
-    /*height: 310px;
-    width: 310px;*/
-    width:65%;
-    margin-left: -100px;
-    margin-top: -100px;
+    width: 250px; /* Ajusta a largura da imagem conforme necessário */
+    height: 250px; /* Mantém a proporção da imagem */
+    margin-left: -60px;
+}
+
+.text-container {
+    flex: 1; /* Permite que o text-container ocupe o espaço disponível restante após a imagem */
+    padding: 10px; /* Adiciona um espaçamento interno para o conteúdo */
+    justify-content: center;
+}
+
+.titulo-cardapio {
+    margin-bottom: 10px; /* Adiciona um espaço entre o título e o parágrafo */
+    color: #CD7F32;
+    font-size: 30px;
+    letter-spacing: 1px;
 }
 
 .Paragrafo-button {
     color: #7D7D7D;
-    /*color: #fff;*/
     font-size: 18px;
     line-height: 27px;
-    margin-top: 10px;
 }
 
-.text-container {
-    text-align: left;
-}
-
-h5 {
-    color: #fff;
-    font-size: 23px;
-    margin-bottom: 15px;
-}
 
 /********Cardápio-Combo***********/
 .background-combo {
     background-image: url('../Imagens/fundocardapio.png');
     background-size: cover;
     display: flex;
-    height: 150vh;
     align-items: center;
     justify-content: center;
+
+
 }
 
 .titulo-combo {
     color: #fff;
-    margin-top: -850px;
-    font-weight: bold;
+    margin-top: -420px;
     font-size: 30px;
+    display: flex;
     margin-left: 50px;
     letter-spacing: 1px;
     font-weight: 100;
-    opacity: 0; /* Inicialmente, o elemento estará invisível */
+    opacity: 0;
+    position: absolute;
 }
 
-.and-button {
-    margin-top: -180px;
-    margin-right: 50px;
+.card-container {
+    display: flex; /* Cria um flex container para os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
+    justify-content: space-between; /* Distribui os cards ao longo do espaço disponível na linha */
+    margin-top: 220px;
 }
+
+
 
 
 
@@ -583,7 +631,7 @@ right-footer {
 /**************************************/
 /*Responsivo*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .logo {
         width: 80%;
         margin-top: 50px;
@@ -594,7 +642,7 @@ right-footer {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     /****combo*****/
 
     .combo {
@@ -609,7 +657,7 @@ right-footer {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     /*********Bemvindo**********/
 
     .bemvindo {
@@ -661,32 +709,19 @@ right-footer {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     /*Delivery*/
 
     .delivery { /*jornada*/
         background-color: #CD7F32;
         display: block;
-        height: 95vh;
     }
 
     .dede { /*left-jornada*/
-        display: block;
+        background-color: #CD7F32;
+        width: 95%;
+        /*height:35%;*/
         text-align: center;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    .delivery-laranja { /*container-jornada*/
-        margin: 0px;
-    }
-
-    .delivery-titulo {
-        font-size: 65px;
-        font-weight: bold;
-        color: #1C2120;
-        font-weight: 100;
     }
 
 
@@ -701,64 +736,115 @@ right-footer {
         display: flex;
         margin-left: 0px;
         width: 100%;
-        height: 100%;
+        height: 70vh;
         margin-top: 40px;
+    }
+
+    .cta-button {
+        width: 50%;
     }
 }
 
-    /*Cardápio*/
-@media only screen and (max-width: 600px) {
-    .Imagem-cardapio {
-        margin-top: -840px;
-        width: 100%;
-    }
 
+/*Cardápio*/
+/*@media only screen and (max-width: 600px) {
+    .Imagem-cardapio {
+        margin-top: -1180px;
+        width: 100%;*/
+        /* height: 400px;*/
+    /*}
 
     .titulo-burguer {
-        margin-top: -720px;
-    }
-
-
-
-    .cards-and-button {
-        margin-top: 260px;
-        margin-right: 90px;
-    }
-
-    .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        /*justify-content:space-between;*/
-        align-items: center;
-        margin-top: 300px;
-        /* Updated: Stack cards vertically */
-        flex-direction: column;
+        color: #fff;
+        margin-top: -1050px;
+        margin-left: 10px;
     }
 
     .card-cardapio {
-        flex-basis: calc(50% - 100px);
-        margin-bottom: 40px;
-        background-color: #000;
-        border-radius: 20px;
-        padding: 20px;
-        box-shadow: 0px 1px 40px #000;
-        margin-left: -120px;
-        width: 215%;
+        margin: 10px;*/ /****************/
+        /*margin-bottom: 20px;
+    }
+}*/
+@media only screen and (max-width: 780px) {
+    .Imagem-cardapio {
+        margin-top: -1100px;
+        width: 100%;
     }
 
-    .img-card {
-        width: 75%;
-        margin-left: -100px;
-        margin-top: -100px;
+    .cardapio-container {
+        display: flex; /* Cria um flex container para os cards */
+        flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
+        justify-content: space-between; /* Distribui os cards ao longo do espaço disponível na linha */
+        margin-top: 580px;
+        justify-content: center;
+     
+    }
+
+
+
+    .titulo-burguer {
+        color: #fff;
+        margin-top: -950px;
+        margin-left: 10px;
+    }
+
+    .card-cardapio {
+        margin: 10px; /****************/
+        margin-bottom: 20px;
     }
 }
 
+@media only screen and (max-width: 480px) {
 
-@media only screen and (max-width: 600px) {
+
+    .cardapio-container {
+        display: flex; /* Cria um flex container para os cards */
+        flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
+        justify-content: space-between; /* Distribui os cards ao longo do espaço disponível na linha */
+        margin-top: 320px;
+    }
+
+    .Imagem-cardapio {
+        margin-top: -1150px;
+        width: 100%;
+    }
+
+    .titulo-burguer {
+        color: #fff;
+        margin-top: -1020px;
+        margin-left: 10px;
+    }
+
+    .card-cardapio {
+        margin: 10px; /****************/
+        margin-bottom: 20px;
+    }
+}
+
+/*.img-card {
+}*/
+
+
+
+
+
+
+@media only screen and (max-width: 780px) {
+
+
+    .card-container {
+        justify-content: center;
+    }
+
+    .titulo-combo {
+        margin-top: -550px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
 
     /*******Combo*******/
-
     .background-combo {
         background-image: url('../Imagens/fundocardapio.png');
         background-size: cover;
@@ -770,42 +856,40 @@ right-footer {
     }
 
     .titulo-combo {
-        margin-top: -1000px;
-    }
-
-    .and-button {
-        margin-top: -180px;
-        margin-right: 100px;
+        margin-top: -550px;
+        margin-left: 20px;
     }
 }
 
 
-/* Responsive styles using media queries */
-@media (max-width: 768px) {
-    #footer_content {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 1.5rem;
-        height: auto;
-        justify-content: center;
-        align-items: center;
+
+    /* Responsive styles using media queries */
+    @media (max-width: 768px) {
+        #footer_content {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 1.5rem;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #footer_contacts img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer-list {
+            margin-right: 0;
+            margin-top: 1.5rem;
+        }
     }
 
-    #footer_contacts img {
-        width: 100%;
-        height: 100%;
+    @media (max-width: 480px) {
+        #footer_content {
+            grid-template-columns: 1fr;
+            padding: 1rem;
+        }
     }
 
-    .footer-list {
-        margin-right: 0;
-        margin-top: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    #footer_content {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-    }
-}
 
 
