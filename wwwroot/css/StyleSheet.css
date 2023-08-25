@@ -14,7 +14,33 @@
 
 /*background*/
 
-.background {
+
+
+@media screen and (max-width: 480px) {
+    /* Estilos para telas menores do que 480px */
+    .background .fotos1 {
+        width: 35%;
+        content: url('../Imagens/Castle (8).png');
+        /* Defina aqui o estilo desejado para as imagens */
+        /* Por exemplo: width: 100%; para ocupar a largura total */
+    }
+
+    .background .fotos2 {
+        width: 35%;
+        content: url('../Imagens/wepik-export-202308241518475WkZ.png'); /*Correta*/
+        /* Defina aqui o estilo desejado para as imagens */
+        /* Por exemplo: width: 100%; para ocupar a largura total */
+    }
+
+    .background .fotos3 {
+        width: 35%;
+        content: url(../Imagens/wepik-export-202308241518475WkZ.png);
+        /* Defina aqui o estilo desejado para as imagens */
+        /* Por exemplo: width: 100%; para ocupar a largura total */
+    }
+}
+
+.background  {
     position: relative;
     height: 100vh;
     background-color: #000;
@@ -79,8 +105,8 @@
 .logo {
     width: 20%;
     height: 20%;
-    opacity: 0; /* Inicialmente, o elemento estará invisível */
-    animation: logo 1s ease-in-out forwards; /* Executará a animação "aparecer" com duração de 1 segundo */
+    opacity: 0;
+    animation: logo 1s ease-in-out forwards;
 }
 
 @keyframes logo {
@@ -102,7 +128,7 @@ h2 {
     letter-spacing: 2px;
     font-weight: 100;
     margin-top: -40px;
-    opacity: 0; /* Inicialmente, o elemento estará invisível */
+    opacity: 0; 
     position: relative;
     animation: deslizar 1s ease-in-out forwards;
 }
@@ -120,13 +146,13 @@ h3 {
 
 @keyframes deslizar {
     0% {
-        opacity: 1; /* No início da animação (0%), o elemento estará completamente visível */
-        left: -100%; /* O elemento estará posicionado 100% para a esquerda */
+        opacity: 1; 
+        left: -100%; 
     }
 
     100% {
-        opacity: 1; /* No final da animação (100%), o elemento estará completamente visível */
-        left: 0; /* O elemento estará posicionado 0 (esquerda da tela) */
+        opacity: 1; 
+        left: 0; 
     }
 }
 
@@ -154,14 +180,14 @@ button {
     }
 
 
-/*Combo*/
+/*Card Combo*/
 .section-combo {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    opacity: 0; /* Inicialmente, o elemento estará invisível */
-    animation: combo 1s ease-in-out forwards; /* Executará a animação "aparecer" com duração de 1 segundo */
+    opacity: 0; 
+    animation: combo 1s ease-in-out forwards;
 }
 
 @keyframes combo {
@@ -169,12 +195,11 @@ button {
         opacity: 0;
         transform: translateY(150px);
     }
-    /* No início da animação (0%), o elemento estará invisível e posicionado abaixo (-20px) do local final */
+ 
     100% {
         opacity: 1;
         transform: translateY(0);
     }
-    /* No final da animação (100%), o elemento estará completamente visível e na posição final (sem deslocamento) */
 }
 
 .card-combo {
@@ -201,7 +226,7 @@ button {
 
 .bemvindo {
     margin: 50px;
-    /*100*/
+
 }
 
 .titulo-apresentacao {
@@ -214,7 +239,7 @@ button {
 }
 
 
-.teste {
+.apresentacao {
     display: flex;
     margin-top: -35px;
     margin-left: 150px;
@@ -283,7 +308,6 @@ span {
 .delivery {
     display: flex;
     height: 70vh;
-    
 }
 
 .dede {
@@ -293,11 +317,6 @@ span {
     text-align: left;
     justify-content: center;
     flex-direction: column;
-    
-    
-}
-.delivery-laranja {
-    
 }
 
 .delivery-titulo {
@@ -342,7 +361,6 @@ span {
 
 .img-delivery {
     display: flex;
-    /*width: 140%;*/
     width: 140%;
     height: 70vh
 }
@@ -375,49 +393,44 @@ span {
     font-weight: 100;
     opacity: 0;
     position: absolute;
-    /* Inicialmente, o elemento estará invisível */
 }
 
 
 .cardapio-container {
-    display: flex; /* Cria um flex container para os cards */
-    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
-    justify-content: space-between; /* Distribui os cards ao longo do espaço disponível na linha */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
     margin-top: 320px;
 }
 
 .card-cardapio {
-    flex-basis: calc(100% - 20px); /* Define a base flexível para ocupar metade do espaço disponível e deixa espaço entre os cards */
-    max-width: 450px; /* Define uma largura máxima para cada card */
-    /* Adiciona uma margem entre os cards */
-    display: flex; /* Cria um flex container para a imagem e o conteúdo de texto */
+    flex-basis: calc(100% - 20px);
+    max-width: 450px;     
+    display: flex; 
     background-color: #000;
     border-radius: 20px;
     padding: 20px;
     height: 210px;
     box-shadow: 0px 1px 40px #000;
-    margin: 120px; /****************/
+    margin: 120px; 
     margin-bottom: 50px;
-    /*Alterar para 20px no responsivo*/
 }
 
 .img-card {
-    width: 230px; /* Ajusta a largura da imagem conforme necessário */
-    height: 290px; /* Mantém a proporção da imagem */
+    width: 230px;
+    height: 290px; 
     margin-left: -60px;
     margin-top:-40px;
-
 }
 
-
 .text-container {
-    flex: 1; /* Permite que o text-container ocupe o espaço disponível restante após a imagem */
-    padding: 10px; /* Adiciona um espaçamento interno para o conteúdo */
+    flex: 1; 
+    padding: 10px; 
     justify-content: center;
 }
 
 .titulo-cardapio {
-    margin-bottom: 10px; /* Adiciona um espaço entre o título e o parágrafo */
+    margin-bottom: 10px; 
     color: #CD7F32;
     font-size: 30px;
     letter-spacing: 1px;
@@ -451,34 +464,28 @@ span {
     font-weight: 100;
     opacity: 0;
     position: absolute;
-
-
-
 }
 
 .card-container {
-    display: flex; /* Cria um flex container para os cards */
-    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
-    justify-content: space-between; /* Distribui os cards ao longo do espaço disponível na linha */
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
     margin-top: 220px;
 }
 
 .card-porcao {
-    /* Adiciona uma margem entre os cards */
-   
     width: 450px;
-    display: flex; /* Cria um flex container para a imagem e o conteúdo de texto */
+    display: flex; 
     background-color: #000;
     border-radius: 20px;
     padding: 20px;
     height: 210px;
     box-shadow: 0px 1px 40px #000;
     margin-left: 300px;
-    /*450*/
 }
 
     .card-porcao.espacamento-extra {
-        margin-left: 0px; /* Espaçamento maior entre os cards específicos */
+        margin-left: 0px;
     }
 
 
@@ -506,9 +513,9 @@ span {
 }
 
 .card-container {
-    display: flex; /* Cria um flex container para os cards */
-    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
-    justify-content: space-between; /* Distribui os cards ao longo do espaço disponível na linha */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
     margin-top: 220px;
 }
 
@@ -645,8 +652,9 @@ right-footer {
     }
 }
 
+/****combo*****/
 @media only screen and (max-width: 768px) {
-    /****combo*****/
+   
 
     .combo {
         width: 100%;
@@ -659,9 +667,9 @@ right-footer {
     }
 }
 
-
+/*********Bemvindo**********/
 @media only screen and (max-width: 768px) {
-    /*********Bemvindo**********/
+   
 
     .bemvindo {
         margin: 0px;
@@ -675,7 +683,7 @@ right-footer {
         margin-right: 0px;
     }
 
-    .teste {
+    .apresentacao {
         display: block;
         margin-top: 0px;
         justify-content: center;
@@ -702,7 +710,6 @@ right-footer {
     }
 
     .texto {
-        /*display: block;*/
         display: flex;
         text-align: center;
         justify-content: center;
@@ -711,19 +718,18 @@ right-footer {
     }
 }
 
-
+/*Delivery*/
 @media only screen and (max-width: 768px) {
-    /*Delivery*/
+    
 
-    .delivery { /*jornada*/
+    .delivery { 
         background-color: #CD7F32;
         display: block;
     }
 
-    .dede { /*left-jornada*/
+    .dede { 
         background-color: #CD7F32;
         width: 95%;
-        /*height:35%;*/
         text-align: center;
     }
 
@@ -735,7 +741,7 @@ right-footer {
     }
 
 
-    .img-delivery { /*right-jornada*/
+    .img-delivery {
         display: flex;
         margin-left: 0px;
         width: 100%;
@@ -757,9 +763,9 @@ right-footer {
     }
 
     .cardapio-container {
-        display: flex; /* Cria um flex container para os cards */
-        flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
-        justify-content: space-between; /* Distribui os cards ao longo do espaço disponível na linha */
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between;
         margin-top: 580px;
         justify-content: center;
     }
@@ -767,17 +773,16 @@ right-footer {
 
 
     .titulo-burguer {
-        color: #fff;
         margin-top: -950px;
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     .card-cardapio {
-        margin: 10px; /****************/
+        margin: 10px; 
         margin-bottom: 20px;
     }
 }
-
+/*Cardápio*/
 @media only screen and (max-width: 480px) {
 
 
@@ -793,10 +798,10 @@ right-footer {
         width: 100%;
     }
 
+
     .titulo-burguer {
-        color: #fff;
-        margin-top: -900px;
-        margin-left: 10px;
+        margin-top: -850px;
+        margin-left: 20px;
     }
 
     .card-cardapio {
@@ -819,67 +824,69 @@ right-footer {
 
 
 
-
+/*******Combo*******/
 @media only screen and (max-width: 780px) {
 
-    /**Alterado agr****/
+   
     .card-container {
-        display: flex; /* Cria um flex container para os cards */
-        flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
-        justify-content: space-between; /* Distribui os cards ao longo do espaço disponível na linha */
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
         justify-content: center;
     }
 
 
 
     .card-porcao {
-        margin: 10px; /****************/
+        margin: 10px; 
         margin-bottom: 20px;
         width: 100%;
         max-width: 450px;
     }
 
         .card-porcao.espacamento-extra {
-            margin: 10px; /****************/
+            margin: 10px;
             margin-bottom: 20px;
         }
-    /**pra cima ---- embaixo segue a msm coisa****/
+   
     .card-container {
         justify-content: center;
     }
 
-    /*  .titulo-combo {
-        margin-top: -550px;
-        margin-left: 20px;
-    }*/
     .titulo-combo {
-        margin-top: -550px;
-        margin-left: 200px;
+        margin-top: -300px;
+        margin-left: 20px;
     }
+
+    .titulo-porcao {
+        margin-top: -300px;
+        margin-left: 20px;
+    }
+
+
 }
 
+/*******Combo*******/
 @media only screen and (max-width: 480px) {
 
-    /*******Combo*******/
-
-    /***Alterado agr***/
+    
     .card-container {
-        display: flex; /* Cria um flex container para os cards */
-        flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha, se necessário */
-        justify-content: space-between; /* Distribui os cards ao longo do espaço disponível na linha */
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
         justify-content: center;
     }
 
 
     .card-porcao {
-        margin: 10px; /****************/
+        margin: 10px; 
         margin-bottom: 20px;
         width: 100%;
         margin-left: 35px;
     }
 
         .card-porcao.espacamento-extra {
-            margin: 10px; /****************/
+            margin: 10px; 
             margin-bottom: 20px;
         }
 
@@ -887,18 +894,12 @@ right-footer {
 
 
         .card-porcao.espacamento-extra {
-            margin-left: 35px; /****************/
+            margin-left: 35px; 
         }
-    /***embaixo normal***/
-
-
-
-
-
-
+  
     .titulo-combo {
-        margin-top: -350px;
-        margin-left: 165px;
+        margin-top: -300px;
+        margin-left: 20px;
     }
 }
 
