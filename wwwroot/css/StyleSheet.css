@@ -20,21 +20,21 @@
     /* Estilos para telas menores do que 480px */
     .background .fotos1 {
         width: 35%;
-        content: url('../Imagens/Castle (8).png');
+        content: url('../Imagens/celularduplo1.png');
         /* Defina aqui o estilo desejado para as imagens */
         /* Por exemplo: width: 100%; para ocupar a largura total */
     }
 
     .background .fotos2 {
         width: 35%;
-        content: url('../Imagens/wepik-export-202308241518475WkZ.png'); /*Correta*/
+        content: url('../Imagens/celulartodos1.png'); /*Correta*/
         /* Defina aqui o estilo desejado para as imagens */
         /* Por exemplo: width: 100%; para ocupar a largura total */
     }
 
     .background .fotos3 {
         width: 35%;
-        content: url(../Imagens/wepik-export-202308241518475WkZ.png);
+        content: url(../Imagens/celularcombo1.png);
         /* Defina aqui o estilo desejado para as imagens */
         /* Por exemplo: width: 100%; para ocupar a largura total */
     }
