@@ -156,7 +156,7 @@ h3 {
     }
 }
 
-button {
+/*button {
     width: 15%;
     padding: 16px 0px;
     border: none;
@@ -178,7 +178,29 @@ button {
         border: 2px solid #CD7F32;
         cursor: pointer;
     }
+*/
 
+.whatsapp-link {
+    width: 15%;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background: #CD7F32;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}
+    .whatsapp-link:hover {
+        background-color: #000;
+        color: #CD7F32;
+        border: 2px solid #CD7F32;
+        cursor: pointer;
+    }
 
 /*Card Combo*/
 .section-combo {
@@ -647,7 +669,7 @@ right-footer {
         margin-top: 50px;
     }
 
-    button {
+    .whatsapp-link {
         width: 50%;
     }
 }
