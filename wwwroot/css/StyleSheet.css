@@ -519,15 +519,15 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    
 }
 
 .titulo-combo {
     color: #fff;
-    margin-top: -220px;
+    margin-top: -620px;
     font-size: 30px;
     display: flex;
-    margin-left: -70px;
+    margin-left: 50px;
     letter-spacing: 1px;
     font-weight: 100;
     opacity: 0;
@@ -780,22 +780,23 @@ right-footer {
 /*Cardápio*/
 @media only screen and (max-width: 780px) {
     .Imagem-cardapio {
-        margin-top: -1000px;
+        margin-top: -950px;
         width: 100%;
+
     }
 
     .cardapio-container {
         display: flex; 
         flex-wrap: wrap; 
         justify-content: space-between;
-        margin-top: 580px;
+        margin-top: 880px;
         justify-content: center;
     }
 
 
 
     .titulo-burguer {
-        margin-top: -950px;
+        margin-top: -750px;
         margin-left: 20px;
     }
 
@@ -816,13 +817,13 @@ right-footer {
     }
 
     .Imagem-cardapio {
-        margin-top: -1100px;
+        margin-top: -960px;
         width: 100%;
     }
 
 
     .titulo-burguer {
-        margin-top: -850px;
+        margin-top: -700px;
         margin-left: 20px;
     }
 
@@ -876,7 +877,7 @@ right-footer {
     }
 
     .titulo-combo {
-        margin-top: -300px;
+        margin-top: -900px;
         margin-left: 20px;
     }
 
@@ -920,7 +921,7 @@ right-footer {
         }
   
     .titulo-combo {
-        margin-top: -300px;
+        margin-top: -900px;
         margin-left: 20px;
     }
 }
